@@ -98,3 +98,36 @@ a:hover {
     text-decoration: none;
     cursor: pointer;
 }
+
+svg {
+    height: 20px;
+    width: 50%;
+}
+
+a link-github {
+    height: 20px;
+    width: 50%;
+    background-color: powderblue;
+}
+
+header {
+    border: 4px solid var(--txthover);
+    border-radius: 20px;
+    padding: 18px;
+    margin: 30px;
+    text-align: center;
+}
+
+nav {
+    border: 4px solid var(--txthover);
+    border-radius: 20px;
+    padding: 18px;
+    margin: 30px;
+}
+
+section {
+    border: 4px solid var(--txtcolor);
+    border-radius: 20px;
+    padding: 18px;
+    margin: 30px;
+}
