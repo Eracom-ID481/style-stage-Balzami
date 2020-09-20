@@ -77,6 +77,10 @@ html {
     --txthover: #4e9999;
 }
 
+a {
+    cursor: url('img/arrow.png'), default;
+}
+
 body {
     background-image: linear-gradient(var(--secondary) 0%, var(--primary) 100%);
     color: white;
@@ -100,8 +104,12 @@ a:hover {
 }
 
 svg {
-    height: 20px;
-    width: 50%;
+    height: 15px;
+    fill: var(--txtcolor);
+}
+
+svg:hover {
+    fill: var(--txthover);
 }
 
 a link-github {
@@ -110,6 +118,7 @@ a link-github {
     background-color: powderblue;
 }
 
+/*display not demander à Brayan*/
 header {
     border: 4px solid var(--txthover);
     border-radius: 20px;
@@ -118,13 +127,38 @@ header {
     text-align: center;
 }
 
-nav {
-    border: 4px solid var(--txthover);
-    border-radius: 20px;
-    padding: 18px;
-    margin: 30px;
+ul li {
+    border-radius: 4px;
+    background-color: var(--primary);
+    border: 2px solid var(--primary);
+    padding: 10px 30px;
+    margin-bottom: 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
+ul li:hover {
+    background-color: var(--secondary);
+    border: 2px solid var(--txtcolor);
+}
+
+/*ul li {
+    border-radius: 4px;
+    background-color: #4CAF50;
+    border: 2px solid #4CAF50;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+ul:hover {
+    background-color: var(--secondary);
+    border: 2px solid var(--txtcolor);
+}*/
 section {
     border: 4px solid var(--txtcolor);
     border-radius: 20px;
