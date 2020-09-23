@@ -70,6 +70,8 @@ select {
 /* là c'est mon job */
 /*
 #274046 0%, #E6DADA 100%);*/
+/*@media screen and (max-width 480px) {
+}*/
 html {
     --primary: #274046;
     --secondary: #E6DADA;
@@ -77,8 +79,12 @@ html {
     --txthover: #4e9999;
 }
 
-a {
+* {
     cursor: url('img/arrow.png'), default;
+}
+
+a {
+    cursor: url('img/selector.png'), default !important;
 }
 
 body {
@@ -105,17 +111,21 @@ a:hover {
 
 svg {
     height: 15px;
+}
+
+a.link-github {
+    height: 20px;
+    width: 50%;
     fill: var(--txtcolor);
 }
 
-svg:hover {
+footer ul li:nth-child(2):hover>a.link-github {
+    color: var(--txthover);
     fill: var(--txthover);
 }
 
-a link-github {
-    height: 20px;
-    width: 50%;
-    background-color: powderblue;
+header a.link-github:hover {
+    fill: var(--txthover);
 }
 
 /*display not demander à Brayan*/
